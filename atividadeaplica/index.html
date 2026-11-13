@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 2 - Colunas em CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+      color: #222;
+    }
+
+    section {
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-top: 0;
+      text-align: justify;
+    }
+
+    /* Parte A */
+    .parte-a {
+      column-count: 2;
+    }
+
+    /* Parte B */
+    .parte-b {
+      column-count: 3;
+    }
+
+    /* Parte C */
+    .parte-c {
+      column-count: 3;
+      column-gap: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h2>Parte A (column-count: 2)</h2>
+    <div class="parte-a">
+      <p>A evolução da leitura ao longo dos séculos sempre esteve diretamente ligada às tecnologias disponíveis em cada época. Desde os antigos pergaminhos manuscritos até a invenção da prensa de tipos móveis por Johannes Gutenberg, no século XV, a forma como o texto é organizado na página influencia a compreensão e o conforto visual do leitor. Com a popularização dos livros impressos, tipógrafos passaram a estudar proporções, margens e espaçamentos para evitar o cansaço ocular durante longos períodos de leitura. Esses princípios tradicionais continuam servindo de base para o design editorial contemporâneo, tanto no meio físico quanto nos ambientes digitais atuais.</p>
+
+      <p>Com o surgimento da internet e o avanço dos navegadores modernos, ler textos extensos diretamente na tela se tornou uma atividade cotidiana para milhões de pessoas. No entanto, diferentemente do papel impresso, as telas possuem tamanhos variados, que vão desde pequenos smartphones até monitores panorâmicos de alta resolução. Quando um bloco de texto ocupa toda a largura de uma tela grande sem qualquer divisão, as linhas ficam excessivamente longas. Isso dificulta o retorno dos olhos para o início da linha seguinte, fazendo com que o leitor perca o foco ou releia trechos por engano.</p>
+
+      <p>Para solucionar esse problema de leitura em páginas web, o CSS oferece recursos específicos para a criação de layouts em múltiplas colunas, inspirados nos jornais e revistas impressos. A divisão do conteúdo em colunas permite controlar o comprimento médio das linhas, mantendo cada trecho dentro de uma largura agradável para os olhos. Além disso, o fluxo contínuo do texto entre uma coluna e outra ocorre de maneira automática, sem que o desenvolvedor precise dividir manualmente os parágrafos em várias caixas separadas no código HTML, o que torna a manutenção da página muito mais simples e organizada.</p>
+
+      <p>Outro aspecto importante na construção de interfaces voltadas para leitura é o equilíbrio entre a quantidade de colunas e o espaçamento interno entre elas. Se as colunas estiverem muito próximas umas das outras, as palavras de colunas vizinhas podem acabar se confundindo visualmente, prejudicando a fluidez do texto. Por outro lado, um espaçamento adequado cria uma pausa visual natural, separando cada bloco de informação de forma clara e harmoniosa. A escolha correta do tamanho da fonte, da altura da linha e do contraste entre o texto e o fundo também complementa a estrutura em colunas e melhora a experiência geral do usuário.</p>
+
+      <p>Por fim, pensar na adaptação do layout para diferentes dispositivos é essencial em qualquer projeto web atual. Enquanto telas amplas comportam bem duas ou três colunas lado a lado, dispositivos menores exigem que o conteúdo se reorganize em uma única coluna para evitar cortes horizontais ou textos apertados demais. Ao combinar propriedades que definem tanto o número máximo de colunas quanto a largura mínima ideal de cada uma, o navegador consegue ajustar a exibição automaticamente conforme o espaço disponível na janela. Dessa forma, o leitor tem uma experiência consistente, legível e agradável independentemente do aparelho utilizado para acessar a página.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Parte B (column-count: 3)</h2>
+    <div class="parte-b">
+      <p>A evolução da leitura ao longo dos séculos sempre esteve diretamente ligada às tecnologias disponíveis em cada época. Desde os antigos pergaminhos manuscritos até a invenção da prensa de tipos móveis por Johannes Gutenberg, no século XV, a forma como o texto é organizado na página influencia a compreensão e o conforto visual do leitor. Com a popularização dos livros impressos, tipógrafos passaram a estudar proporções, margens e espaçamentos para evitar o cansaço ocular durante longos períodos de leitura. Esses princípios tradicionais continuam servindo de base para o design editorial contemporâneo, tanto no meio físico quanto nos ambientes digitais atuais.</p>
+
+      <p>Com o surgimento da internet e o avanço dos navegadores modernos, ler textos extensos diretamente na tela se tornou uma atividade cotidiana para milhões de pessoas. No entanto, diferentemente do papel impresso, as telas possuem tamanhos variados, que vão desde pequenos smartphones até monitores panorâmicos de alta resolução. Quando um bloco de texto ocupa toda a largura de uma tela grande sem qualquer divisão, as linhas ficam excessivamente longas. Isso dificulta o retorno dos olhos para o início da linha seguinte, fazendo com que o leitor perca o foco ou releia trechos por engano.</p>
+
+      <p>Para solucionar esse problema de leitura em páginas web, o CSS oferece recursos específicos para a criação de layouts em múltiplas colunas, inspirados nos jornais e revistas impressos. A divisão do conteúdo em colunas permite controlar o comprimento médio das linhas, mantendo cada trecho dentro de uma largura agradável para os olhos. Além disso, o fluxo contínuo do texto entre uma coluna e outra ocorre de maneira automática, sem que o desenvolvedor precise dividir manualmente os parágrafos em várias caixas separadas no código HTML, o que torna a manutenção da página muito mais simples e organizada.</p>
+
+      <p>Outro aspecto importante na construção de interfaces voltadas para leitura é o equilíbrio entre a quantidade de colunas e o espaçamento interno entre elas. Se as colunas estiverem muito próximas umas das outras, as palavras de colunas vizinhas podem acabar se confundindo visualmente, prejudicando a fluidez do texto. Por outro lado, um espaçamento adequado cria uma pausa visual natural, separando cada bloco de informação de forma clara e harmoniosa. A escolha correta do tamanho da fonte, da altura da linha e do contraste entre o texto e o fundo também complementa a estrutura em colunas e melhora a experiência geral do usuário.</p>
+
+      <p>Por fim, pensar na adaptação do layout para diferentes dispositivos é essencial em qualquer projeto web atual. Enquanto telas amplas comportam bem duas ou três colunas lado a lado, dispositivos menores exigem que o conteúdo se reorganize em uma única coluna para evitar cortes horizontais ou textos apertados demais. Ao combinar propriedades que definem tanto o número máximo de colunas quanto a largura mínima ideal de cada uma, o navegador consegue ajustar a exibição automaticamente conforme o espaço disponível na janela. Dessa forma, o leitor tem uma experiência consistente, legível e agradável independentemente do aparelho utilizado para acessar a página.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Parte C (column-gap: 40px)</h2>
+    <div class="parte-c">
+      <p>A evolução da leitura ao longo dos séculos sempre esteve diretamente ligada às tecnologias disponíveis em cada época. Desde os antigos pergaminhos manuscritos até a invenção da prensa de tipos móveis por Johannes Gutenberg, no século XV, a forma como o texto é organizado na página influencia a compreensão e o conforto visual do leitor. Com a popularização dos livros impressos, tipógrafos passaram a estudar proporções, margens e espaçamentos para evitar o cansaço ocular durante longos períodos de leitura. Esses princípios tradicionais continuam servindo de base para o design editorial contemporâneo, tanto no meio físico quanto nos ambientes digitais atuais.</p>
+
+      <p>Com o surgimento da internet e o avanço dos navegadores modernos, ler textos extensos diretamente na tela se tornou uma atividade cotidiana para milhões de pessoas. No entanto, diferentemente do papel impresso, as telas possuem tamanhos variados, que vão desde pequenos smartphones até monitores panorâmicos de alta resolução. Quando um bloco de texto ocupa toda a largura de uma tela grande sem qualquer divisão, as linhas ficam excessivamente longas. Isso dificulta o retorno dos olhos para o início da linha seguinte, fazendo com que o leitor perca o foco ou releia trechos por engano.</p>
+
+      <p>Para solucionar esse problema de leitura em páginas web, o CSS oferece recursos específicos para a criação de layouts em múltiplas colunas, inspirados nos jornais e revistas impressos. A divisão do conteúdo em colunas permite controlar o comprimento médio das linhas, mantendo cada trecho dentro de uma largura agradável para os olhos. Além disso, o fluxo contínuo do texto entre uma coluna e outra ocorre de maneira automática, sem que o desenvolvedor precise dividir manualmente os parágrafos em várias caixas separadas no código HTML, o que torna a manutenção da página muito mais simples e organizada.</p>
+
+      <p>Outro aspecto importante na construção de interfaces voltadas para leitura é o equilíbrio entre a quantidade de colunas e o espaçamento interno entre elas. Se as colunas estiverem muito próximas umas das outras, as palavras de colunas vizinhas podem acabar se confundindo visualmente, prejudicando a fluidez do texto. Por outro lado, um espaçamento adequado cria uma pausa visual natural, separando cada bloco de informação de forma clara e harmoniosa. A escolha correta do tamanho da fonte, da altura da linha e do contraste entre o texto e o fundo também complementa a estrutura em colunas e melhora a experiência geral do usuário.</p>
+
+      <p>Por fim, pensar na adaptação do layout para diferentes dispositivos é essencial em qualquer projeto web atual. Enquanto telas amplas comportam bem duas ou três colunas lado a lado, dispositivos menores exigem que o conteúdo se reorganize em uma única coluna para evitar cortes horizontais ou textos apertados demais. Ao combinar propriedades que definem tanto o número máximo de colunas quanto a largura mínima ideal de cada uma, o navegador consegue ajustar a exibição automaticamente conforme o espaço disponível na janela. Dessa forma, o leitor tem uma experiência consistente, legível e agradável independentemente do aparelho utilizado para acessar a página.</p>
+    </div>
+  </section>
+
+ <!--Comparação: O formato com duas colunas (column-count: 2) e o espaçamento maior (column-gap: 40px) foi o que apresentou a melhor legibilidade. Quando testei com três colunas, o texto ficou muito estreito na tela e acabava quebrando de linha toda hora, o que deixa a leitura mais cansativa. Com duas colunas, a largura das linhas fica num tamanho bem mais confortável, e os 40px de distância no meio evitam que a gente acabe misturando as linhas de uma coluna com a outra enquanto le.-->
+</body>
+</html>
